@@ -1,0 +1,95 @@
+<mjml>
+  <!-- NOTE: 'mj-head' tag is the HTML <head> tag -->
+  <mj-head>
+    <!-- Title (The 'mj-title' tag is the HTML <title> tag) -->
+    <mj-title>MJML Client</mj-title>
+
+    <!-- Declare which breakpoint the layout should go desktop/mobile -->
+    <mj-breakpoint width="480px" />
+
+    <!-- Note: The 'mj-font' is used to import fonts -->
+    <!-- Import Google Fonts -->
+    <mj-font
+      name="Google Fonts"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    />
+
+    <!-- Import Font Awesome -->
+    <mj-font
+      name="Font Awesome 5 Brands"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css"
+    />
+    <mj-font
+      name="Font Awesome 5 Free"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/solid.min.css"
+    />
+
+    <!-- Note: The 'mj-attributes' tag overrides default settings -->
+    <!-- Note: The 'mj-attributes' tag affects one MJML component (Local Scope) -->
+    <!-- Example: 'mj-text', 'mj-image', 'mj-button', 'mj-section', etc -->
+    <mj-attributes>
+      <!-- Use Google Fonts Globally (Global Scope) -->
+      <!-- Note: The 'mj-all' tag affects all MJML components (Global Scope)  -->
+      <!-- So basically it affects EVERY component in the entire MJML document -->
+      <mj-all font-family="Open Sans, sans-serif" />
+
+      <!-- Set Global Text Resets -->
+      <mj-text padding="0px" line-height="1"> </mj-text>
+
+      <!-- Set Global Image Resets -->
+      <!-- Note: the 'fluid-on-mobile' attribute sets the image/video to full width on mobile display. Even if the width is set -->
+      <mj-image padding="0px" fluid-on-mobile="true" />
+
+      <!-- Set Global Button Resets -->
+      <mj-button href="#" padding="0" border-radius="0" text-transform="uppercase" font-weight="700"> </mj-button>
+
+      <!-- Set Global Section Resets -->
+      <mj-section padding="0px"> </mj-section>
+
+      <!-- Note: Think 'mj-class' as declaring variables/mixins/custom properies -->
+      <!-- To apply them, use mj-class="<name>" syntax" -->
+
+      <!-- Declare 'Variables' -->
+      <mj-class name="primary-color" color="slateblue" />
+      <mj-class name="secondary-color" color="#666666" />
+      <mj-class name="primary-bg" background-color="slateblue" />
+      <mj-class name="secondary-bg" background-color="#666666" />
+      <mj-class name="text-light" color="white" />
+      <mj-class name="text-dark" color="black" />
+
+      <!-- Declare 'Mixins' -->
+      <mj-class
+        name="hero-button"
+        border="2px solid white"
+        background-color="transparent"
+        font-size="16px"
+        inner-padding="8px 16px"
+        letter-spacing="1px"
+        line-height="1"
+      />
+
+      <mj-class
+        name="card-button"
+        border="1px solid white"
+        background-color="slateblue"
+        font-size="12px"
+        inner-padding="4px 8px"
+        letter-spacing="0px"
+        line-height="1.25"
+      />
+    </mj-attributes>
+
+    <!-- NOTE: 'mj-style' tag is the HTML <style> tag -->
+    <mj-style> </mj-style>
+  </mj-head>
+
+  <!-- NOTE: 'mj-body' tag is the HTML <body> tag -->
+  <mj-body>
+    <!-- NOTE: 'mj-section' tags are for ROWS -->
+    <!-- NOTE: 'mj-column' tags are for COLUMNS -->
+
+    <mj-section>
+      <mj-column> </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
