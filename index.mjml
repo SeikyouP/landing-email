@@ -2,7 +2,7 @@
   <!-- NOTE: 'mj-head' tag is the HTML <head> tag -->
   <mj-head>
     <!-- Title (The 'mj-title' tag is the HTML <title> tag) -->
-    <mj-title>MJML Client</mj-title>
+    <mj-title>MJML Email Boilerplate</mj-title>
 
     <!-- Declare which breakpoint the layout should go desktop/mobile -->
     <mj-breakpoint width="480px" />
@@ -50,12 +50,41 @@
       <!-- To apply them, use mj-class="<name>" syntax" -->
 
       <!-- Declare 'Variables' -->
-      <mj-class name="primary-color" color="slateblue" />
-      <mj-class name="secondary-color" color="#666666" />
-      <mj-class name="primary-bg" background-color="slateblue" />
-      <mj-class name="secondary-bg" background-color="#666666" />
-      <mj-class name="text-light" color="white" />
-      <mj-class name="text-dark" color="black" />
+
+      <!-- Background Colors -->
+      <mj-class name="bg-primary" background-color="transparent" />
+      <mj-class name="bg-secondary" background-color="transparent" />
+      <mj-class name="bg-tertiary" background-color="transparent" />
+      <mj-class name="bg-white" background-color="#ffffff" />
+      <mj-class name="bg-light" background-color="#f2f2f2" />
+      <mj-class name="bg-gray" background-color="gray" />
+      <mj-class name="bg-dark" background-color="#333333" />
+      <mj-class name="bg-black" background-color="black" />
+
+      <!-- Text Colors -->
+      <mj-class name="text-primary" color="transparent" />
+      <mj-class name="text-secondary" color="transparent" />
+      <mj-class name="text-tertiary" color="transparent" />
+      <mj-class name="text-white" color="#ffffff" />
+      <mj-class name="text-light" color="#f2f2f2" />
+      <mj-class name="text-gray" color="gray" />
+      <mj-class name="text-dark" color="#333333" />
+      <mj-class name="text-black" color="black" />
+
+      <!-- Lighter Colors -->
+      <mj-class name="primary-light" color="transparent" />
+      <mj-class name="secondary-light" color="transparent" />
+      <mj-class name="tertiary-light" color="transparent" />
+
+      <!-- Darker Colors -->
+      <mj-class name="primary-dark" color="transparent" />
+      <mj-class name="secondary-dark" color="transparent" />
+      <mj-class name="tertiary-dark" color="transparent" />
+
+      <!-- Accent Colors -->
+      <mj-class name="primary-accent" color="transparent" />
+      <mj-class name="secondary-accent" color="transparent" />
+      <mj-class name="tertiary-accent" color="transparent" />
 
       <!-- Declare 'Mixins' -->
       <mj-class
@@ -84,12 +113,18 @@
   </mj-head>
 
   <!-- NOTE: 'mj-body' tag is the HTML <body> tag -->
-  <mj-body>
+  <mj-body mj-class="bg-white">
     <!-- NOTE: 'mj-section' tags are for ROWS -->
     <!-- NOTE: 'mj-column' tags are for COLUMNS -->
 
+    <!-- Start Header Section Table -->
     <mj-section>
-      <mj-column> </mj-column>
+      <mj-column>
+        <mj-text>
+          <h1>Hello World</h1>
+        </mj-text>
+      </mj-column>
     </mj-section>
+    <!-- End Header Section Table -->
   </mj-body>
 </mjml>
